@@ -8,9 +8,84 @@
 <body>
     <header>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#catalog">Catalog</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="btn">Home</a>
+            <a href="catalogue.html" class="btn">Catalogue</a>
+            <a href="contact.html" class="btn">Contact</a>
         </nav>
     </header>
+
+    <main class="container">
+    <h1>Catalogue</h1>
+    <div class="filters">
+      <button class="filter-btn" data-filter="all" aria-pressed="true">Tout</button>
+      <button class="filter-btn" data-filter="rock">Rock</button>
+      <button class="filter-btn" data-filter="jazz">Jazz</button>
+      <button class="filter-btn" data-filter="classique">Classique</button>
+      <button class="filter-btn" data-filter="electro">Électro</button>
+      <button class="filter-btn" data-filter="occasions">Occasions</button>
+    </div>
+
+    <section class="catalog-grid">
+
+      <article class="card" data-category="rock">
+        <img src="assets/img/abbey-road.jpg" alt="The Beatles - Abbey Road" />
+        <div class="card-body">
+          <h3>The Beatles — Abbey Road</h3>
+          <p class="meta">1969 · Rock</p>
+          <p class="price">24,90 €</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="rock">
+        <img src="assets/img/dark-side.jpg" alt="Pink Floyd - The Dark Side of the Moon" />
+        <div class="card-body">
+          <h3>Pink Floyd — The Dark Side of the Moon</h3>
+          <p class="meta">1973 · Rock</p>
+          <p class="price">27,90 €</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="jazz">
+        <img src="assets/img/kind-of-blue.jpg" alt="Miles Davis - Kind of Blue" />
+        <div class="card-body">
+          <h3>Miles Davis — Kind of Blue</h3>
+          <p class="meta">1959 · Jazz</p>
+          <p class="price">22,90 €</p>
+        </div>
+      </article>
+
+
+      <article class="card" data-category="classique">
+        <img src="assets/img/four-seasons.jpg" alt="Vivaldi - The Four Seasons" />
+        <div class="card-body">
+          <h3>Vivaldi — The Four Seasons</h3>
+          <p class="meta">1725 · Classique</p>
+          <p class="price">19,90 €</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="electro">
+        <img src="assets/img/daft-punk.jpg" alt="Daft Punk - Discovery" />
+        <div class="card-body">
+          <h3>Daft Punk — Discovery</h3>
+          <p class="meta">2001 · Électro</p>
+          <p class="price">25,90 €</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="occasions">
+        <img src="assets/img/occasion-lot.jpg" alt="Lot vinyles d'occasion" />
+        <div class="card-body">
+          <h3>Lot Vinyles — Sélection Occasion</h3>
+          <p class="meta">Années diverses · Occasions</p>
+          <p class="price">À partir de 5,00 €</p>
+        </div>
+      </article>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vinyl Paradise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
